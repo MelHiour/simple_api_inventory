@@ -32,6 +32,7 @@ jobs:
         flake8 .  --max-line-length=130 --statistics --exclude test*
         
   image-build:
+    needs: build-and-test
     runs-on: ubuntu-latest
     
     steps:
