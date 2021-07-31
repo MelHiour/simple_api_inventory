@@ -4,6 +4,17 @@ This is just a simplest inventory you can imagine with even more simple API.
 ## Usage
 After start you can interact with API, the result will be stored in db.json.
 
+
+### Files
+```
+.
+├── db.json                     The file you inventory will be stored
+├── helpers.py                  Just a couple of classes with all internal logic
+├── simple_inventory.py         Main file with Web API  
+├── README.md                   This very file
+└──requirements.txt             All you need to have to run the script
+
+```
 ### What can you do?
 - Get the list of equipment in your inventory. If you have any. I don't.
 ```
