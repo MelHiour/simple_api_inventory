@@ -3,7 +3,13 @@ This is just a simplest inventory you can imagine with even more simple API.
 
 ## Usage
 After start you can interact with API, the result will be stored in db.json.
-
+```
+docker run --name simple_inventory \
+-p 5000:5000/tcp \
+-v /srv/data:/app/data \
+--restart always \
+melhiour1/simple_inventory
+```
 
 ### Files
 ```
