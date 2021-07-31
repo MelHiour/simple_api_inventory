@@ -32,6 +32,9 @@ jobs:
     - name: Lint with flake8
       run: |
         flake8 .  --max-line-length=130 --statistics --exclude test*
+#    - name: Test with pytest
+#      run: |
+#        pytest --doctest-modules --junitxml=test-report/test-results-${{ matrix.python-version }}.xml
         
   image-build:
     needs: build-and-test
