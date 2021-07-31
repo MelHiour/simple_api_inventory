@@ -7,19 +7,19 @@ app = Flask(__name__)
 @app.route('/inventory/', methods=['GET'])
 def get_inventory():
     """Returns the list of equipment"""
-    return jsonify({'equipment': [inventory.get_equipment()]})
+    return jsonify({'equipment': [inventory.get_equipment()]}), 200
 
 
 @app.route('/inventory/<name>', methods=['GET'])
 def get_equipment_by_name(name):
     """Returns the equipment instance"""
-    return jsonify(getattr(inventory, name).to_dict())
+    return jsonify(getattr(inventory, name).to_dict()), 200
 
 
 @app.route('/inventory/<name>/<attr>', methods=['GET'])
 def get_equipment_by_attr(name, attr):
     """Returns the specified attribute of equipment"""
-    return jsonify(inventory.get_equipment_attr(name, attr))
+    return jsonify(inventory.get_equipment_attr(name, attr)), 200
 
 
 @app.route('/inventory/', methods=['POST'])
