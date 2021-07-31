@@ -30,12 +30,11 @@ jobs:
     - name: Lint with flake8
       run: |
         flake8 .  --max-line-length=130 --statistics --exclude test*
-jobs:
+        
   image-build:
     runs-on: ubuntu-latest
     
     steps:
-
       - name: Check Out Repo 
         uses: actions/checkout@v2
 
