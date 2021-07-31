@@ -44,5 +44,5 @@ def update_equipment_attr(name):
 
 
 if __name__ == '__main__':
-    inventory = Inventory('db.json')
+    inventory = Inventory('data/db.json')
     app.run(host='0.0.0.0')
