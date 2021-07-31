@@ -12,4 +12,4 @@ COPY simple_inventory.py simple_inventory.py
 
 RUN mkdir data
 
-CMD [ "python3", "simple_inventtory.py"]
+CMD [ "python3", "simple_inventory.py"]
