@@ -8,11 +8,12 @@ After start you can interact with API, the result will be stored in db.json.
 ### Files
 ```
 .
-├── /data/db.json               The file you inventory will be stored
-├── helpers.py                  Just a couple of classes with all internal logic
-├── simple_inventory.py         Main file with Web API  
+├── .github/workflows           Actions specified to build the image and upload to Dockerhub
+├── Dockerfile                  Instructions to buld the image
 ├── README.md                   This very file
-└──requirements.txt             All you need to have to run the script
+├── helpers.py                  Just a couple of classes with all internal logic
+├── requirements.txt            All you need to have to run the script
+└── simple_inventory.py         Main file with Web API  
 
 ```
 ### What can you do?
