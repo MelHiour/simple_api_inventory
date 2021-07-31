@@ -2,7 +2,7 @@
 This is just a simplest inventory you can imagine with even more simple API.
 
 ## Usage
-After start you can interact with API, the result will be stored in `db.json` file in `data` folder..
+After start you can interact with API, the result will be stored in `db.json` file in `data` folder.
 ```
 docker run --name simple_inventory \
 -p 5000:5000/tcp \
