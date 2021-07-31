@@ -56,7 +56,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/siple_inventory:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/simple_inventory:latest
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
