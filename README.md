@@ -81,6 +81,6 @@ http://10.20.30.12:5000/inventory/FRW1
 ### Why bother?
 Yeah, I know I can use an Excel spreadsheet for that and actually did...
 But I had to play with 
-- OOP. Each equipment represents an instance of the class which is stored as an attrtibute of another instance.
+- OOP. Each equipment represents an instance of the class which is stored as an attrtibute of another instance. See [helpers.py](https://github.com/MelHiour/simple_api_inventory/blob/main/helpers.py)
 - API. I really wanted to created the simple API using Flask. I did smth like that before in [pi_clock](https://github.com/MelHiour/pi_clock), but this time it's more solid.
-- Docker. The idea is to build the docker image and upload it to DockerHub using GitHub CI/CD pipeline.
+- Docker. The idea is to build the docker image and upload it to DockerHub using GitHub CI/CD pipeline. See [main.yaml](https://github.com/MelHiour/simple_api_inventory/blob/main/.github/workflows/main.yaml)
