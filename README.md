@@ -8,7 +8,7 @@ After start you can interact with API, the result will be stored in db.json.
 ### Files
 ```
 .
-├── db.json                     The file you inventory will be stored
+├── /data/db.json               The file you inventory will be stored
 ├── helpers.py                  Just a couple of classes with all internal logic
 ├── simple_inventory.py         Main file with Web API  
 ├── README.md                   This very file
