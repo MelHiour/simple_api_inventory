@@ -7,6 +7,9 @@ WORKDIR /app
 COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 
-COPY . .
+COPY helpers.py helpers.py
+COPY simple_inventory.py simple_inventory.py
+
+RUN mkdir data
 
 CMD [ "python3", "simple_inventtory.py"]
