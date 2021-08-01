@@ -2,6 +2,7 @@
 This is just a simplest inventory you can imagine with even more simple API. 
 - There is a [short article](http://www.labnfun.ru/2021/08/api.html) available in Russian as well.
 - You can fing image on Docker Hub [here](https://hub.docker.com/r/melhiour1/simple_inventory).
+- I also created a simple Curl bash wrapper to simplify query process [here](https://github.com/MelHiour/vyos_onbox_scripts/blob/main/inventory.sh)
 
 ## Usage
 After start you can interact with API, the result will be stored in `db.json` file in `data` folder.
