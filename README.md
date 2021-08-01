@@ -1,5 +1,6 @@
 # simple_api_inventory
-This is just a simplest inventory you can imagine with even more simple API.
+This is just a simplest inventory you can imagine with even more simple API. 
+There is a short article available in Russian as well (http://www.labnfun.ru/2021/08/api.html)
 
 ## Usage
 After start you can interact with API, the result will be stored in `db.json` file in `data` folder.
