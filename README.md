@@ -1,6 +1,7 @@
 # simple_api_inventory
 This is just a simplest inventory you can imagine with even more simple API. 
-There is a [short article](http://www.labnfun.ru/2021/08/api.html) available in Russian as well.
+- There is a [short article](http://www.labnfun.ru/2021/08/api.html) available in Russian as well.
+- You can fing image on Docker Hub [here](https://hub.docker.com/r/melhiour1/simple_inventory).
 
 ## Usage
 After start you can interact with API, the result will be stored in `db.json` file in `data` folder.
