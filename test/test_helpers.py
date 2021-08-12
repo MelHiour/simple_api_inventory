@@ -7,6 +7,7 @@ def test_base(tmp_path):
     d = tmp_path / "sub"
     d.mkdir()
     p = d / "test.json"
+    return p
 
 
 def test_inventory_init_from_file():
