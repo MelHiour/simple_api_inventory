@@ -2,7 +2,7 @@ import pytest
 
 from helpers import Equipment, Inventory
 
-@pytest.fixture(autouse=True)
+@pytest.fixture()
 def test_base(tmp_path):
     d = tmp_path / "sub"
     d.mkdir()
@@ -10,7 +10,7 @@ def test_base(tmp_path):
     return p
 
 
-def test_inventory_init_from_file():
+def test_inventory_init_from_file(test_base):
     test_base.write_text('{"test": {"name": "test"}}')
     inventory = Inventory(p)
     assert inventory.test.to_dict() == {'name': 'test'}
