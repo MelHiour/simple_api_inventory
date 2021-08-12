@@ -11,7 +11,7 @@ def test_base(tmp_path):
 
 
 def test_inventory_init_from_file():
-    p.write_text('{"test": {"name": "test"}}')
+    test_base.write_text('{"test": {"name": "test"}}')
     inventory = Inventory(p)
     assert inventory.test.to_dict() == {'name': 'test'}
 
