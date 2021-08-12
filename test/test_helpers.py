@@ -12,7 +12,7 @@ def test_base(tmp_path):
 
 def test_inventory_init_from_file(test_base):
     test_base.write_text('{"test": {"name": "test"}}')
-    inventory = Inventory(p)
+    inventory = Inventory(test_base)
     assert inventory.test.to_dict() == {'name': 'test'}
 
 
